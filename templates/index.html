@@ -1,0 +1,36 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Generator</title>
+</head>
+<body>
+    <h1>Name Generator</h1>
+    <form action="/generate" method="post">
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="neutral">Neutral</option>
+        </select><br><br>
+        <label for="nationality">Nationality:</label>
+        <select name="nationality" id="nationality">
+            <option value="American">American</option>
+            <option value="British">British</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Italian">Italian</option>
+        </select><br><br>
+        <label for="length">Name Length:</label>
+        <select name="length" id="length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select><br><br>
+        <button type="submit">Generate Name</button>
+    </form>
+</body>
+</html>
+
